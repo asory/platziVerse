@@ -1,0 +1,4 @@
+repository "platziVerse@Asory@cloud"
+  path "/"
+    br "/main"
+    co "/main"
