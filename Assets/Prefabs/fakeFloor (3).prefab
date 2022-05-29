@@ -95,8 +95,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1.2135725, z: 1}
-  m_Center: {x: 0, y: 0.10678625, z: 0}
+  m_Size: {x: 0.97981036, y: 0.8815906, z: 0.9673461}
+  m_Center: {x: -0.003921017, y: -0.059204698, z: 0.00643903}
 --- !u!54 &5511678073655523520
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -126,6 +126,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTag: Player
-  disappearTime: 2
+  disappearTime: 1
   canReset: 0
   restTime: 0

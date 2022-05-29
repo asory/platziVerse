@@ -32,9 +32,14 @@ public class GhostFloor : MonoBehaviour
             print("OnTriggerEnter");
 
             print(other.transform.tag);
-            Destroy(gameObject, disappearTime);
+            Invoke("ShowHideFloor", disappearTime);
 
         }
+    }
+
+    public void ShowHideFloor()
+    {
+        gameObject.SetActive(!gameObject.activeInHierarchy);
     }
 
 }
