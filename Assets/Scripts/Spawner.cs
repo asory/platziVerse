@@ -25,17 +25,15 @@ public class Spawner : MonoBehaviour
 
     void Start () {
         // building sprite reference position
-     
 
- 
     }
 
     void Update()
     {
         time += Time.deltaTime;
 
-        if(time >= interval) {
-            for(int i = 0; i < Random.Range(1, creationAmount); i++) {
+        if (time > interval) { 
+            for (int i = 0; i < Random.Range(1, creationAmount); i++) {
                 generate();
             }
             time = 0;
@@ -45,9 +43,9 @@ public class Spawner : MonoBehaviour
 
     // Define inntial position
     Vector3 getRandomPosition(){
-        float randomX = Random.Range(-dispersionRange, dispersionRange);
-        float randomY = Random.Range(-dispersionRange/2, dispersionRange/2);
-        float randomZ = Random.Range(-dispersionRange / 2, dispersionRange / 2);
+        float randomX = Random.Range(horizontalLimits[0], horizontalLimits[1]);
+        float randomY = Random.Range(verticalLimits[0], verticalLimits[1]);
+        float randomZ = Random.Range(zLimits[0], zLimits[1]);
 
 
         Vector3 position = this.transform.position;
@@ -63,18 +61,15 @@ public class Spawner : MonoBehaviour
     void generate() {
         Vector3 position = getRandomPosition();
 
-    
-        if(position.x <= horizontalLimits[1] && position.y >= horizontalLimits[0] || position.z >= zLimits[0])
-        {
-            generate();
-            return;
-        }
-
         // Type of potion handler
-        Texture newTexture= Badges[Random.Range(0, Badges.Length)];
+        Texture newTexture = Badges[Random.Range(0, Badges.Length)];
         GameObject newCoin = Coin;
-        Instantiate(newCoin, position, Quaternion.identity);
-        newCoin.SetActive(false);
+        Instantiate(newCoin, position, new Quaternion(90f,0f,0f,0f));
+        //newCoin.SetActive(false);
+        Renderer rend = newCoin.GetComponent<Renderer>();
+        // rend.material.mainTexture = newTexture;
+        //newCoin.SetActive(true);
+
 
     }
 }
