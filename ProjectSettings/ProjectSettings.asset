@@ -596,6 +596,7 @@ PlayerSettings:
     1: STARTER_ASSETS_PACKAGES_CHECKED
     7: STARTER_ASSETS_PACKAGES_CHECKED
     13: STARTER_ASSETS_PACKAGES_CHECKED
+    33: STARTER_ASSETS_PACKAGES_CHECKED
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
