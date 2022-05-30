@@ -25,7 +25,6 @@ public class Coin : MonoBehaviour
         {
             Destroy(gameObject);
             PlayerScore.instance.AddPoints(points);
-
         }
     }
 }
