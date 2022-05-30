@@ -8,10 +8,6 @@ public class PlayerScore : MonoBehaviour
     public static PlayerScore instance;
     [SerializeField] Text poinstText;
 
-    // Text timing
-//    private float TextTimer = 1f;
-  //  private float DissapearingTime;
-
     public int score ;
     int highScore;
 
@@ -37,7 +33,7 @@ public class PlayerScore : MonoBehaviour
     public void updateScore(int points)
     {
             //sum score
-        poinstText.color = Color.black;
+        poinstText.color = Color.white;
         poinstText.text = points.ToString();
         saveHighScore();
 
@@ -46,7 +42,6 @@ public class PlayerScore : MonoBehaviour
 
     private void saveHighScore()
     {
-        Debug.Log("saveHighScore:  " + score);
 
         if (highScore < score)
         {
