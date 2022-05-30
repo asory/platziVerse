@@ -24,6 +24,8 @@ Button btnCreditos, btnCerrarCreditos;
 
         UIControles.SetActive(false);
         UICreditos.SetActive(false);
+        btnCerrarControles.gameObject.SetActive(false);
+        btnCerrarCreditos.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -35,18 +37,22 @@ Button btnCreditos, btnCerrarCreditos;
     void OnControlesClicked()
     {
          UIControles.SetActive(true);
+         btnCerrarControles.gameObject.SetActive(true);
     }
     void OnControlesOffClicked()
     {
         UIControles.SetActive(false);
+        btnCerrarControles.gameObject.SetActive(false);
     }
     void OnCreditosClicked()
     {
         UICreditos.SetActive(true);
+        btnCerrarCreditos.gameObject.SetActive(true);
     }
     void OnCreditosOffClicked()
     {
     UICreditos.SetActive(false);
+    btnCerrarCreditos.gameObject.SetActive(false);
 
     }
 }
