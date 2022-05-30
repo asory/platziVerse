@@ -5,12 +5,20 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
+    path: Assets/Scenes/Start.unity
+    guid: 5c35114eba68d42108e6be16e7efcb05
+  - enabled: 1
     path: Assets/Scenes/Playground.unity
     guid: 707acc8dffb72b144bb1ffbe1c965f3d
-  m_configObjects:
-    com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
   - enabled: 1
     path: Assets/Scenes/Castle.unity
     guid: fbf62416104b79649a4c1a5b1ec72280
-  m_configObjects: {}
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: d91902357613143ca917019f2d0b558a
+  m_configObjects:
+    com.unity.input.settings: {fileID: 11400000, guid: 9e7be553448fa2546aea5752021cbcf7, type: 2}
+    enabled: {fileID: 0}
+    guid: {fileID: 0}
+    path: {fileID: 0}

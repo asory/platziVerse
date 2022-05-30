@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: b9113204-2ee0-4de3-99fb-5c0e30bd7f24
+  m_Name: Assets_1X1-cripto-3e35c253-9e2c-411e-98f1-abc16d75e956
   m_Shader: {fileID: 4800000, guid: e260cfa7296ee7642b167f1eb5be5023, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -24,7 +24,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 60ce6567445b44c788dc81ff720e36c5, type: 3}
+        m_Texture: {fileID: 2800000, guid: 531b0ec93e56a4dbe8aea76423dea13a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MaskTex:
